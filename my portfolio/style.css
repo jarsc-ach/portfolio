@@ -500,6 +500,7 @@ footer .social a:hover{
 }
 .project:hover{
     background-color: white;
+    cursor: pointer;
 }
 @media (max-width: 425px) {
     html {
