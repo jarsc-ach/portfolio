@@ -704,4 +704,75 @@ footer .social a:hover{
       background-color: var(--bg-color);
     }
   }
-  
+
+  @media (max-width: 424px) {
+    .home {
+        flex-direction: column;
+        gap: 4rem;
+        text-align: center;
+      }
+    
+      .home-content {
+        align-items: center;
+      }
+    
+      .home-img img {
+        width: 60vw;
+      }
+    .home-content h3{
+        font-size: 3rem;
+    }
+    .timeline-items::before {
+        left: 1.5rem;
+    }
+    
+    .timeline-item {
+        padding-left: 5rem !important;
+        padding-right: 0 !important;
+        text-align: left !important;
+    }
+    
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 5rem;
+        padding-right: 0;
+        text-align: left;
+    }
+    
+    .timeline-dot {
+        left: 0.7rem;
+    }
+    
+    .timeline-content {
+        width: 100% !important;
+        padding: 2rem !important;
+        border-radius: 2rem;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.8rem !important;
+        text-align: left !important;
+    }
+    
+    .timeline-content p {
+        font-size: 1.4rem !important;
+        text-align: left !important;
+    }
+    .service-box {
+        height: auto;
+        padding: 2rem 0;
+    }
+    
+    .service-info {
+        padding: 2rem !important;
+    }
+    
+    .service-info h4 {
+        font-size: 2.2rem !important;
+    }
+    
+    .service-info p {
+        font-size: 1.4rem !important;
+    }
+  }
+
