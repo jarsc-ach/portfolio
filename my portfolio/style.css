@@ -231,19 +231,19 @@ span{
 }
 @keyframes words{
     0%,20%{
-        content: "Full Stack Web Developer";
+        content: "Full Stack Web dev";
     }
     21%,40%{
-        content: "Backend Engineer";
+        content: "Backend";
     }
     41%,60%{
-        content: "Frontend Engineer";
+        content: "Frontend";
     }
     61%,80%{
-        content: "Data Analyst";
+        content: "Data Analysis";
     }
     81%,100%{
-        content: "Ml & AI Engineer";
+        content: "Ml & AI Dev";
     }
 }
 @keyframes typing{
@@ -500,7 +500,6 @@ footer .social a:hover{
 }
 .project:hover{
     background-color: white;
-    cursor: pointer;
 }
 @media (max-width: 425px) {
     html {
@@ -512,9 +511,11 @@ footer .social a:hover{
     }
   
     .home-content h3 {
-      font-size: 2.5rem;
+      font-size: 1rem;
+      
     }
-  
+    
+    
     
     
   }
@@ -544,7 +545,7 @@ footer .social a:hover{
       align-items: center;
       gap: 2rem;
       padding: 2rem 0;
-      display: none; /* hide by default */
+      display: none; 
       z-index: 100;
       max-height: 0;
       overflow: hidden;
@@ -554,7 +555,7 @@ footer .social a:hover{
   
     .navbar.show {
       display: flex; 
-      max-height: 500px;/* show when .show is added */
+      max-height: 500px;
     }
   
     #menu-icon {
@@ -570,6 +571,13 @@ footer .social a:hover{
         align-items: center;
         justify-content: center;
       }
+    .timeline-content h3{
+        text-align: center;
+    }
+    .timeline-content p{
+        font-size: 1.5rem;
+        text-align: center;
+    }
     
     .service-box h4{
         font-size: 2.7rem;
@@ -577,7 +585,7 @@ footer .social a:hover{
     }
     .service-box p{
         font-size: 1.2rem;
-        text-align: center;
+        text-align: left;
     }
     .service-box {
         width: 90%;
@@ -588,7 +596,9 @@ footer .social a:hover{
     .projects {
       padding: 5rem 2rem;
     }
-  
+    .project{
+        margin:0.5rem 0;
+    }
     .project h4 {
       font-size: 2rem;
     }
@@ -596,8 +606,10 @@ footer .social a:hover{
     .project h5, .project p {
       font-size: 1.2rem;
     }
+    
   }
-  @media (max-width: 500px) {
+  /*
+  @media (max-width: 425px) {
     .text-animation span {
       display: none !important;
     }
@@ -608,13 +620,88 @@ footer .social a:hover{
       font-size: 2.5rem;
     }
   }
-  @media (min-width: 701px) {
+  @media (min-width: 425px) {
     .text-animation span {
       display: inline !important;
     }
   
     .text-animation::after {
       content: none;
+    }
+  }
+  */
+  @media (max-width: 768px) {
+    .text-animation {
+        font-size: 1.6rem;     
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    
+      .text-animation span,
+      .text-animation span::before {
+        font-size: inherit;      
+        font-weight: inherit;
+        max-width: 200px;
+        display: inline-block;
+        overflow: hidden;
+        display: flex;
+        align-items: baseline;
+        margin-left: 0.3rem;
+      }
+    
+      .text-animation span::after {
+        width: 100%;
+        right: 0;
+        height: 100%;
+        background-color: var(--bg-color);
+        border-left: 2px solid var(--bg-color);
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+      }
+  }
+  
+  @media (max-width: 768px) {
+    @keyframes words {
+      0%,20% {
+        content: "Web Dev";
+      }
+      21%,40% {
+        content: "Backend";
+      }
+      41%,60% {
+        content: "Frontend";
+      }
+      61%,80% {
+        content: "DA";
+      }
+      81%,100% {
+        content: "ML&AI Dev";
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    html, body {
+      overflow-y: scroll; 
+      scrollbar-width: auto; 
+      scrollbar-color: var(--main-color) var(--bg-color); 
+    }
+  
+   
+    ::-webkit-scrollbar {
+      width: 15px;
+    }
+  
+    ::-webkit-scrollbar-thumb {
+      background-color: var(--main-color);
+    }
+  
+    ::-webkit-scrollbar-track {
+      background-color: var(--bg-color);
     }
   }
   
